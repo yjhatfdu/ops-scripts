@@ -3,6 +3,7 @@ if [ -z $OPENRESTY_VERSION ]; then
 	OPENRESTY_VERSION=1.9.7.3
 fi
 
+apt-get update
 apt-get install -y build-essential libssl-dev libpcre++-dev automake autoconf libtool unzip zip git
 wget https://openresty.org/download/openresty-$OPENRESTY_VERSION.tar.gz
 git clone https://github.com/google/ngx_brotli

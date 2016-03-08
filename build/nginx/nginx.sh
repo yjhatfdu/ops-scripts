@@ -16,4 +16,5 @@ sed -ie "s/openresty/nginx/g" build/nginx-*/src/http/ngx_http_header_filter_modu
 sed -ie "s/openresty\/\".*/nginx\"/g" build/nginx-*/src/core/nginx.h
 sed -ie "s/define NGINX_VERSION.*/define NGINX_VERSION      \"stable\"/g" build/nginx-*/src/core/nginx.h
 make -j4 install
-
+ln -s /usr/local/openresty/nginx/sbin/nginx /usr/sbin/nginx
+ldconfig

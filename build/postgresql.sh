@@ -3,7 +3,7 @@ if [ -z $PG_VERSION ]; then
 fi
 sudo apt update
 sudo apt install -y build-essential libreadline-dev zlib1g-dev libxml2-dev python3 libpython3-dev
-wget https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-9.6.3.tar.bz2
+wget https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2
 tar xvf postgresql-$PG_VERSION.tar.bz2
 cd postgresql-$PG_VERSION
 sudo ln -s python3 /usr/bin/python
